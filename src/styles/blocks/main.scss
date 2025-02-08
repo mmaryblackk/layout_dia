@@ -1,0 +1,24 @@
+.main {
+  background-color: $main-light-color;
+  display: grid;
+  row-gap: 120px;
+  padding-block: 120px 80px;
+  padding-inline: 20px;
+
+  @include on-tablet {
+    row-gap: 148px;
+    padding-inline: 40px;
+  }
+
+  @include on-small-desktop {
+    padding-inline: 54px;
+  }
+
+  @include on-desktop {
+    padding-inline: 226px;
+  }
+
+  @include on-large-screen {
+    padding-inline: 706px;
+  }
+}

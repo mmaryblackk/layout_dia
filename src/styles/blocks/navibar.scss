@@ -1,0 +1,58 @@
+.navibar {
+  padding-block: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include on-small-desktop {
+    padding-block: 48px;
+  }
+
+  &__logo {
+    display: block;
+
+    &::after {
+      content: '';
+      display: inline-block;
+      margin-left: 32px;
+      height: 24px;
+      width: 24px;
+      background-image: url(../images/logo/menu-logo.svg);
+
+      @include on-small-desktop {
+        display: none;
+      }
+    }
+  }
+
+  &__menu {
+    display: none;
+
+    @include on-small-desktop {
+      display: flex;
+      gap: 48px;
+    }
+  }
+
+  &__link {
+    @include navibar-text;
+  }
+
+  &__button {
+    display: block;
+    position: relative;
+
+    @include navibar-text;
+
+    &::after {
+      content: '';
+      display: block;
+      background-color: $blue-color-accent;
+      height: 2px;
+      width: 100%;
+      border-radius: 4px;
+      position: absolute;
+      bottom: -8px;
+    }
+  }
+}

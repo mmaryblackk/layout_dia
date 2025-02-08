@@ -1,5 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html
+  lang="en"
+  class="page"
+>
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -12,8 +15,115 @@
       href="./styles/main.scss"
     />
   </head>
-  <body>
-    <h1>Dia</h1>
+  <body class="page__body">
+    <header class="header">
+      <nav class="navibar">
+        <a
+          href="#"
+          class="navibar__logo"
+        >
+          <img
+            src="./images/logo/air-logo.svg"
+            alt="Dia logo"
+          />
+        </a>
+        <ul class="navibar__menu">
+          <li class="navibar__item">
+            <a
+              href="#about-us"
+              class="navibar__link"
+            >
+              About us
+            </a>
+          </li>
+          <li class="navibar__item">
+            <a
+              href="#"
+              class="navibar__link"
+            >
+              Services
+            </a>
+          </li>
+          <li class="navibar__item">
+            <a
+              href="#"
+              class="navibar__link"
+            >
+              Testimonials
+            </a>
+          </li>
+          <li class="navibar__item">
+            <a
+              href="#"
+              class="navibar__link"
+            >
+              Contact us
+            </a>
+          </li>
+        </ul>
+        <a
+          href="#"
+          class="navibar__button"
+        >
+          Hire us
+        </a>
+      </nav>
+
+      <div class="header__content">
+        <div class="header__top">
+          <h1 class="header__title">Strategic Agency</h1>
+          <p class="header__info">
+            We believe in the power of bold ideas that can solve business
+            challenges.
+          </p>
+          <a
+            href="#"
+            class="header__link"
+          >
+            Learn more
+          </a>
+        </div>
+
+        <div class="header__slider">
+          <div class="slider__content">
+            <div class="slider__arrow">
+              <div class="slider__arrow__left"></div>
+              <div class="slider__arrow__right"></div>
+            </div>
+            <article class="slider__info">
+              <h4 class="slider__title">Intro</h4>
+              <p class="slider__description">
+                By the same illusion which lifts the horizon.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section
+        class="about-us"
+        id="about-us"
+      >
+        <h2 class="about-us__title">Who we are</h2>
+        <p class="about-us__description">
+          We embrace a strategic approach to creative ideas. We are interested
+          in people and human relationships. This is the main thing you need to
+          know about us. We believe in the power of bold ideas that can solve
+          business challenges.
+        </p>
+      </section>
+
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+      <section></section>
+    </main>
+
+    <footer class="footer"></footer>
+
     <script src="scripts/main.js"></script>
   </body>
 </html>
