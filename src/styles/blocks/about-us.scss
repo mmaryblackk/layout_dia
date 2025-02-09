@@ -1,4 +1,6 @@
 .about-us {
+  @include padding-responsive;
+
   &__title {
     color: $heading-color;
     font-family: Poppins, sans-serif;

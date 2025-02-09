@@ -2,6 +2,7 @@
   box-sizing: border-box;
   background-color: $main-dark-color;
   padding-inline: 20px;
+  border-radius: 0 0 30px 30px;
 
   @include on-tablet {
     padding-inline: 40px;
@@ -49,6 +50,11 @@
     line-height: 62.4px;
     letter-spacing: -2px;
     color: #fff;
+
+    @include on-tablet {
+      font-size: 64px;
+      line-height: 68px;
+    }
 
     @include on-small-desktop {
       max-width: 300px;
